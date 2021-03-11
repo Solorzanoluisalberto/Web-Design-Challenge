@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="latitude" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Web Design Homework - Web Visualization Dashboard (Latitude)">
+        <meta name="author" content="LUIS SOLORZANO, Georgia Tech Data Science and Analytics Boot Camp">
+        <title>Latitude - Latitude Analysis Dashboard with Attitude</title>
+        <!--<link rel="stylesheet" href="Resources/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+        <!--<link href="Resources/custom.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->  
+        <link rel="stylesheet" href="Resources/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="Resources/bootstrap.css">
+        <link rel="stylesheet" href="Resources/custom.min.css">
+      </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle, collapsible" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> ▼ Plots</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href target="_self">► Action</a>
+            <a class="dropdown-item" href="#">► Another action</a>
+            <a class="dropdown-item" href="#">► Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  
+<div>
+    <table border ="1" class="Table_1">
+        <tr> 
+            <td>
+                <h1>Latitude</h1>
+            </td>
+            <td width = "15%">
+                <div>
+                    <table Class="Table_2" border="1" width="200px">
+                    <tr>
+                        <td>
+                         
+                        </td>
+                        <td>
+                            <h2>Comparison</h2>
+                        </td>
+                        <td>
+                            <h2>Data</h2>
+                        </td>
+                    </tr>
+                </table> 
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+<!--  =================================================================  -->
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+</body>
+</html>
