@@ -17,3 +17,24 @@
 .red {
   background: indianred;
 }
+
+.visualization {
+background: #179b6f;
+}
+
+.summary {
+background: #454d54;
+}
+
+.temp {
+background: #454d54;
+}
+.humi {
+background: #5c6670;
+}
+.wind {
+background: #0099e6;
+}
+.clou {
+background: #3973ac;
+}
