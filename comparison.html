@@ -50,68 +50,57 @@
 <br>
 <br>
 <br>
-
-<div class='container'> 
-  <div class="jumbotron">
-    <div class="row justify-content-center" >
-      <div class="col-sm-12 col-md-6 justify-content-center" >
-        <a href="visualize_fig1.html" title="Max Temperature"><img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig1.png" width="45%"></a>
-      </div>
-      <div class="col-sm-12 col-md-6 justify-content-center">
-        <a href="visualize_fig2.html" title="Humidity"><img style="border-radius:6px" src="Resources/assets/images/Fig2.png" width="45%"></a>
-      </div>
-    </div>  
-    <div class="row" >
-      <div class="col-sm-12 col-md-6">
-
-      </div>
-      <div class="col-sm-12 col-md-6">
-
-      </div> 
-    </div>
-  </div>
+<div class="table-responsive">          
+  <table class="table">
+<thead>
+<h2>Comparison: Latitude vs. X</h2>
+</thead>
+<tr>
+  <td><h3>vs. Temperature</h3><a href="temperature.html" title="Max Temperature"><img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig1.png" width="80%"></a> </td>
+  <td><h3>vs. Humidity</h3><a href="humidity.html" title="Humidity"><img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig2.png" width="80%"></a></td>
+</tr>
+<tr>
+  <td>
+    <h3>vs. Cloudiness</h3><a href="cloudiness.html" title="Cloudiness"><img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig3.png" alt="Cloudiness" width="80%"></a>
+  </td>
+  <td>
+    <h3>Wind Speed</h3><a href="windspeed.html" title="Wind Speed"><img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig4.png" alt="Wind Speed" width="80%"></a>
+  </td>
+</tr>
+</table>
 </div>
-
-<div class="col-sm-6 col-md-12">
-  
-</div>
-<div class="col-sm-6 col-md-12">
-  <a href="visualize_fig3.html" title="Cloudiness"><img style="border-radius:6px" src="Resources/assets/images/Fig3.png" alt="Cloudiness" width="45%"></a><a href="visualize_fig4.html" title="Wind Speed"><img style="border-radius:6px" src="Resources/assets/images/Fig4.png" width="45%"></a>
-</div>
-<div class='container'>
-<div class="row" >
-  <div class="col-md-8">
-    <div class="jumbotron">
-      <div class="col-sm-12 col-md-12" >
-        <div class="box purple" style="border-radius:6px"><h1 id="bio-name">Comparison: Latitude vs X.</h1></div>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <div class="col-sm-12 col-md-12">
-            <img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig4.png" alt="Latitude" width="100%" >
-          <br><h2>The Purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset on over 500 cities.
-            <br>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitud Factors we locked at included temperature, cloudiness, win speed and humidity. This site provides the source data and visua;izations created as part of the analysis, as well as explanation and descriptions of any trends and correlations witnessed.</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4" >
-    <div class="jumbotron">
-        <div class="col-sm-12 col-md-12">
-          <div class="box purple" style="border-radius:6px"><h2 id="bio-name">Visualizations</h2></div>
-          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-          <div class="col-sm-6 col-md-12">
-            <img style="border-radius:6px" src="Resources/assets/images/Fig1.png" alt="Temperature" width="50%"><img style="border-radius:6px" src="Resources/assets/images/Fig2.png" alt="Humidity" width="50%">
+<!--
+<div class="table-responsive">    
+<table class="table" border="1">
+  <tr>
+    <td>
+      <div class="container justify-content-center"> 
+          <div class="row justify-content-center" >
+            <div class="col-sm-12 col-md-6 justify-content-center">vs. Temperature<br>
+              <a href="temperature.html" title="Max Temperature"><img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig1.png" width="80%"></a>
+            </div>
+            <div class="col-sm-12 col-md-6 justify-content-center">vs. Humidity<br>
+              <a href="humidity.html" title="Humidity"><img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig2.png" width="80%"></a>
+            </div>
+          </div>  
+          <div class="row" >
+            <div class="col-sm-12 col-md-6">vs. Cloudiness<br>
+              <a href="cloudiness.html" title="Humidity">
+                <img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig3.png" alt="Humidity" width="80%">
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6">vs. Wind Speed<br>
+              <a href="windspeed.html" title="Humidity">
+                <img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig4.png" alt="Wind Speed" width="80%">
+              </a>
+            </div> 
           </div>
-          <div class="col-sm-6 col-md-12">
-            <img style="border-radius:6px" src="Resources/assets/images/Fig3.png" alt="Cloudiness" width="50%"><img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig4.png" alt="Wind Speed" width="50%">
-          </div>
-        </div>
-        <!-- 2  -->
-    </div>
-  </div>
+      </div>
+    </td>
+  </tr>
+</table>
 </div>
-</div>
-  
-  
+-->
 <!-- ================================================ -->
 
 
