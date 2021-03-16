@@ -1,6 +1,60 @@
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="latitude" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web Design Homework - Web Visualization Dashboard (Latitude)">
+    <meta name="author" content="LUIS SOLORZANO, Georgia Tech Data Science and Analytics Boot Camp">
+    <title>Latitude - Latitude Analysis Dashboard with Attitude</title>
+    <!--<link rel="stylesheet" href="Resources/css/bootstrap.css">-->
+    <link rel="stylesheet" href="Resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Resources/css/style.css">
+    <!--<link rel="stylesheet" href="css/custom.min.css">-->
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <b><a class="navbar-brand" href="index.html">Latitude</a></b>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample07" >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown07">
+            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="windspeed.html">Win Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="weather_data.html" tabindex="-1" aria-disabled="true">Data</a>
+        </li>
+      </ul>
+      <!-- 
+      <form class="form-inline my-2 my-md-0">
+        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+      </form>
+      -->
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<h1>Data</h1>
+<p>The following table includes all of the data used for plotting during this project</p>
+<!--table table-hover-->
+<table border="1" class="dataframe table table-success">
+  <thead bgcolor='#5c6670'>
+    <tr style="text-align: center;">
       <th>City_ID</th>
       <th>City</th>
       <th>Cloudiness</th>
@@ -6580,3 +6634,12 @@
     </tr>
   </tbody>
 </table>
+
+<!--<script src="js/jquery-3.3.1.slim.min.js"></script>-->
+<script src="Resources/js/popper.min.js" ></script>
+<script src="Resources/js/bootstrap.min.js"></script>
+<script src="Resources/js/jquery-3.4.1.slim.min.js"></script>
+<script src="Resources/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
