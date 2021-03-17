@@ -5,7 +5,7 @@
     <meta name="latitude" content="width=device-width, initial-scale=1">
     <meta name="description" content="Web Design Homework - Web Visualization Dashboard (Latitude)">
     <meta name="author" content="LUIS SOLORZANO, Georgia Tech Data Science and Analytics Boot Camp">
-    <title>Latitude - Latitude Analysis Dashboard with Attitude</title>
+    <title>Win Speed - Latitude Analysis Dashboard with Attitude</title>
     <!--<link rel="stylesheet" href="Resources/css/bootstrap.css">-->
     <link rel="stylesheet" href="Resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="Resources/css/style.css">
@@ -56,26 +56,41 @@
   <div class="col-md-8">
     <div class="jumbotron">
       <div class="col-sm-12 col-md-12" >
-        <div class="box wind" style="border-radius:6px"><h1 id="bio-name">vs. Wind Speed</h1></div>
+        <div class="box wind" style="border-radius:6px"><h1 id="bio-name">Latitude vs. Wind Speed</h1></div>
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
         <div class="col-sm-12 col-md-12">
             <img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig4.png" alt="Latitude" width="100%" >
-          <br><h2>The Purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset on over 500 cities.
-            <br>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitud Factors we locked at included temperature, cloudiness, win speed and humidity. This site provides the source data and visua;izations created as part of the analysis, as well as explanation and descriptions of any trends and correlations witnessed.</h2>
+            <br><br>
+            <h2>
+              The wind does not flow directly upwards, because the Earth rotates. This rotation causes the wind to have a higher speed in the east direction relative to the ground at high latitudes.
+            As you rise in altitude, the pressure gradient between warm air and cold air increases with height.
+            <br><br>            
+            The influence of this friction is less with height above the ground, so the wind speed increases with height.
+            <br><br>
+            In the graph we have the behavior of the measurements obtained in more than 540 cities, where we notice a higher concentration of points for latitudes greater than zero or above the equator, with a moderate increase in wind speed.
+            </h2>
         </div>
       </div>
     </div>
   </div>
-  <div class="col-md-4" >
+  <div class="col-xs-12 col-md-4" >
     <div class="jumbotron">
-      <div class="col-sm-12 col-md-12">
-        <div class="box visualization " style="border-radius:6px"><h2>Visualizations</h2></div>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <div class="col-sm-6 col-md-12">
-          <a href="temperature.html" title="Max Temperature"><img style="border-radius:6px" src="Resources/assets/images/Fig1.png" width="50%"></a><a href="humidity.html" title="Humidity"><img style="border-radius:6px" src="Resources/assets/images/Fig2.png" width="50%"></a>
+      <div class="row">
+        <div class="box visualization col-md-12" style="border-radius:6px"><h2>Visualizations</h2></div>
+      </div>
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      <div class="row">
+        <div class="col-xs-6 col-sm-3 col-md-6">
+          <a href="temperature.html" title="Max Temperature"><img style="border-radius:6px" src="Resources/assets/images/Fig1.png" width="100%">vs. Temperature</a>
         </div>
-        <div class="col-sm-6 col-md-12">
-          <a href="cloudiness.html" title="Cloudiness"><img style="border-radius:6px" src="Resources/assets/images/Fig3.png" alt="Cloudiness" width="50%"></a><a href="windspeed.html" title="Wind Speed"><img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig4.png" width="50%"></a>
+        <div class="col-xs-6 col-sm-3 col-md-6">
+          <a href="humidity.html" title="Humidity"><img style="border-radius:6px" src="Resources/assets/images/Fig2.png" width="100%">vs. Humidity</a>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-6">
+          <a href="cloudiness.html" title="Cloudiness"><img style="border-radius:6px" src="Resources/assets/images/Fig3.png" alt="Cloudiness" width="100%">vs. Cloudiness</a>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-6">
+          <a href="windspeed.html" title="Wind Speed"><img style="border:1px solid #c1dd43; border-radius:6px" src="Resources/assets/images/Fig4.png" width="100%">vs. Wind Speed</a>
         </div>
       </div>
       <!-- 2  -->

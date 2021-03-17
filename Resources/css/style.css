@@ -27,7 +27,7 @@ background: #454d54;
 }
 
 .temp {
-background: #454d54;
+background: #005580;
 }
 .humi {
 background: #5c6670;
@@ -38,3 +38,16 @@ background: #0099e6;
 .clou {
 background: #3973ac;
 }
+
+.img1 {
+  border: 1px solid #c1dd43;
+  border-radius: 6px;
+  align-items: center;
+  }
+
+  .hr1 {
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray
+    }

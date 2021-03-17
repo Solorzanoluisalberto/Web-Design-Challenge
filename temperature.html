@@ -5,7 +5,7 @@
     <meta name="latitude" content="width=device-width, initial-scale=1">
     <meta name="description" content="Web Design Homework - Web Visualization Dashboard (Latitude)">
     <meta name="author" content="LUIS SOLORZANO, Georgia Tech Data Science and Analytics Boot Camp">
-    <title>Latitude - Latitude Analysis Dashboard with Attitude</title>
+    <title>Temperature - Latitude Analysis Dashboard with Attitude</title>
     <!--<link rel="stylesheet" href="Resources/css/bootstrap.css">-->
     <link rel="stylesheet" href="Resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="Resources/css/style.css">
@@ -56,26 +56,40 @@
   <div class="col-md-8">
     <div class="jumbotron">
       <div class="col-sm-12 col-md-12" >
-        <div class="box temp" style="border-radius:6px"><h1 id="bio-name">vs. Max Temperature</h1></div>
+        <div class="box temp" style="border-radius:6px"><h1 id="bio-name">Latitude vs. Max Temperature</h1></div>
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
         <div class="col-sm-12 col-md-12">
             <img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig1.png" alt="Latitude" width="100%" >
-          <br><h3>As expected, the weather becomes significantly wamer as one approaches the ecuator (0 deg. Latitude). More interestingly, however, is the fact the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. Ths may be due to the tilt of the earth at the time of the year data was gathered
-            </h3>
+          <br><br>
+          <h3>
+            As expected, the weather becomes significantly wamer as one approaches the ecuator (0 deg. Latitude). 
+          <br><br>
+          More interestingly, however, is the fact the southern hemisphere tends to be warmer this time of the year than the northern hemisphere.
+          <br><br>
+          This may be due to the tilt of the earth at the time of the year data was gathered
+          </h3>
           </div>
       </div>
     </div>
   </div>
-  <div class="col-md-4" >
+  <div class="col-xs-12 col-md-4" >
     <div class="jumbotron">
-      <div class="col-sm-12 col-md-12">
-        <div class="box visualization" style="border-radius:6px"><h2>Visualizations</h2></div>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <div class="col-sm-6 col-md-12">
-          <a href="temperature.html" title="Max Temperature"><img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig1.png" width="50%"></a><a href="humidity.html" title="Humidity"><img style="border-radius:6px" src="Resources/assets/images/Fig2.png" width="50%"></a>
+      <div class="row">
+        <div class="box visualization col-md-12" style="border-radius:6px"><h2>Visualizations</h2></div>
+      </div>
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      <div class="row">
+        <div class="col-xs-6 col-sm-3 col-md-6">
+          <a href="temperature.html" title="Max Temperature"><img style="border:1px solid #c1dd43;border-radius:6px" src="Resources/assets/images/Fig1.png" width="100%">vs. Temperature</a>
         </div>
-        <div class="col-sm-6 col-md-12">
-          <a href="cloudiness.html" title="Cloudiness"><img style="border-radius:6px" src="Resources/assets/images/Fig3.png" alt="Cloudiness" width="50%"></a><a href="windspeed.html" title="Wind Speed"><img style="border-radius:6px" src="Resources/assets/images/Fig4.png" width="50%"></a>
+        <div class="col-xs-6 col-sm-3 col-md-6">
+          <a href="humidity.html" title="Humidity"><img style="border-radius:6px" src="Resources/assets/images/Fig2.png" width="100%">vs. Humidity</a>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-6">
+          <a href="cloudiness.html" title="Cloudiness"><img style="border-radius:6px" src="Resources/assets/images/Fig3.png" alt="Cloudiness" width="100%">vs. Cloudiness</a>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-6">
+          <a href="windspeed.html" title="Wind Speed"><img style="border-radius:6px" src="Resources/assets/images/Fig4.png" width="100%">vs. Wind Speed</a>
         </div>
       </div>
       <!-- 2  -->
