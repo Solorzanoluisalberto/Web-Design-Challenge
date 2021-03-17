@@ -45,9 +45,13 @@ background: #3973ac;
   align-items: center;
   }
 
-  .hr1 {
+.hr1 {
     height:2px;
     border-width:0;
     color:gray;
     background-color:gray
     }
+.thead1 {
+      background-color:rgb(72, 79, 114)
+      }
+
